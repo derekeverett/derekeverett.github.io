@@ -31,9 +31,10 @@ We can estimate the specific shear and bulk-viscosities of the Quark Gluon Plasm
 The entire model can contain up to seventeen uncertain parameters that we want to infer. Among them are the parameters controlling the transport properties, the specific shear and bulk viscosities. 
 
 ![Specific Shear and Bulk Viscosities](figs/viscous_posterior_overlay.png) 
-*The estimated specific bulk $\zeta/s$ and shear $\eta/s$ viscosities of the Quark Gluon Plasma, as a function of temperature $T$. $90\%$ credible intervals are shown for three different models in blue, red and green.*
+*The estimated specific bulk (left) and shear (right) viscosities of the Quark Gluon Plasma, as a function of temperature $T$. $90\%$ credible intervals are shown for three different models in blue, red and green.*
 
 Making robust estimates of the transport properties requires us to include the model uncertainties which enter various other stages of the collision. For instance, we must simultaneously estimate properties of the initial conditions, because they are correlated by the model with the transport properties. All together, we vary seventeen model parameters. The one-dimensional and two-dimensional posteriors are displayed in the corner plot below. 
+
 ![Specific Shear and Bulk Viscosities](figs/posterior_full.png) 
 *The posterior of all model parameters for two different models in blue and red.*
 
