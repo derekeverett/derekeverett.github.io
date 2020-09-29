@@ -31,8 +31,9 @@ Finally, observables are calculated which can be compared with experimental data
 
 <div style="text-align:center">
 <img src="figs/observables_fit_MAP.png" alt="Heavy Ion Observables" width="500"/>
-Predictions of the model with Grad particlization at the point in parameter space of maximum likelihood.
 </div>
+
+*Predictions of the model with Grad particlization at the point in parameter space of maximum likelihood.*
  
 
 ### Statistical Inference<a name="stat_infer"></a>
@@ -44,15 +45,15 @@ The entire model can contain up to seventeen uncertain parameters that we want t
 
 
 <div style="text-align:center">
-<img src="figs/viscous_posterior_overlay.png" alt="Heavy Ion Observables" width="400"/>
-The estimated specific bulk (left) and shear (right) viscosities of the Quark Gluon Plasma, as a function of temperature. The 90% credible intervals are shown for three different models in blue, red and green.
+<img src="figs/viscous_posterior_overlay.png" alt="Heavy Ion Observables" width="500"/>
 </div> 
+
+*The estimated specific bulk (left) and shear (right) viscosities of the Quark Gluon Plasma, as a function of temperature. The 90% credible intervals are shown for three different models in blue, red and green.*
 
 Making robust estimates of the transport properties requires us to include the model uncertainties which enter various other stages of the collision. For instance, we must simultaneously estimate properties of the initial conditions, because they are correlated by the model with the transport properties. All together, we vary seventeen model parameters. The one-dimensional and two-dimensional posteriors for select parameters are displayed in the corner plot below. 
 
 <div style="text-align:center">
 <img src="figs/posterior_ic_fs_tsw.png" alt="Heavy Ion Observables" width="700"/>
- 
-The posterior of select model parameters, for two different models in blue and red.
-
 </div>
+
+*The posterior of select model parameters, for two different models in blue and red.*
