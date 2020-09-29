@@ -28,7 +28,9 @@ After a phase of hydrodynamic expansion, the fluid cools and breaks apart into h
 
 Finally, observables are calculated which can be compared with experimental data. The observables predicted by a particular model at the point in parameter space which maximizes the likelihood is shown below. 
 
-![Specific Shear and Bulk Viscosities](figs/observables_fit_MAP.png) 
+
+<img src="figs/observables_fit_MAP.png" alt="Heavy Ion Observables" width="300"/>
+
 *Predictions of the model with Grad particlization at the point in parameter space of maximum likelihood.*
 
  
@@ -40,11 +42,15 @@ Given the experimental observables, we want to infer what were the properties an
 We can estimate the specific shear and bulk-viscosities of the Quark Gluon Plasma fluid by performing [Bayesian parameter estimation].
 The entire model can contain up to seventeen uncertain parameters that we want to infer. Among them are the parameters controlling the transport properties, the specific shear and bulk viscosities. 
 
-![Specific Shear and Bulk Viscosities](figs/viscous_posterior_overlay.png) 
+
+<img src="figs/viscous_posterior_overlay.png" alt="Heavy Ion Observables" width="400"/> 
+
 *The estimated specific bulk (left) and shear (right) viscosities of the Quark Gluon Plasma, as a function of temperature. The 90% credible intervals are shown for three different models in blue, red and green.*
 
 Making robust estimates of the transport properties requires us to include the model uncertainties which enter various other stages of the collision. For instance, we must simultaneously estimate properties of the initial conditions, because they are correlated by the model with the transport properties. All together, we vary seventeen model parameters. The one-dimensional and two-dimensional posteriors for select parameters are displayed in the corner plot below. 
 
-![Specific Shear and Bulk Viscosities](figs/posterior_ic_fs_tsw.png) 
+
+<img src="figs/posterior_ic_fs_tsw.png" alt="Heavy Ion Observables" width="700"/> 
+
 *The posterior of select model parameters, for two different models in blue and red.*
 
