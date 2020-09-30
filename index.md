@@ -4,6 +4,7 @@
 # Table of Contents
 1. [Studying Heavy-Ion Collisions](#studying_hic)
 2. [Computational Modeling of Physical Systems](#comp_model)
+3. [Statistical Model Emulation](#stat_emu)
 3. [Statistical Inference](#stat_infer)
 
 ### Studying Heavy-Ion Collisions<a name="studying_hic"></a>
@@ -20,7 +21,7 @@ I have been a contributing member of the [JETSCAPE collaboration](jetscape.org),
 The models for Heavy Ion Collisions often involve many different stages, described by differing underlying physics. 
 
 The initial conditions describing the deposited matter after the collision can be propagated through many differing physical models. A very simple model assumes that the particles expand isotropically in the plane transverse to the beam direction. 
-[`freestream-milne`](https://github.com/derekeverett/freestream-milne) is a code I've designed to to model this expansion in two or three spatial dimensions. More complicated models assume that the particles can interact. I've also developed [KTIso](https://github.com/derekeverett/KTIso) to simulate the expansion of interacting particles. It determinanistically solves the [Boltzmann equation](https://github.com/derekeverett/KTIso).  
+I've developed a [freestreaming model](https://github.com/derekeverett/freestream-milne) to solve the expansion in two or three spatial dimensions. More complicated models assume that the particles can interact. I've also developed [KTIso](https://github.com/derekeverett/KTIso) to simulate the expansion of interacting particles. It determinanistically solves the [Boltzmann equation](https://github.com/derekeverett/KTIso).  
 
 A core component of many models which are able to describe data well is viscous hydrodynamics. I've assisted in the continued development and maintenance of a [relativistic viscous hydrodynamic code](https://github.com/derekeverett/cpu-vh), additionally with a [version optimized for Graphics Processors](https://github.com/derekeverett/gpu-vh). 
 
@@ -34,6 +35,17 @@ Finally, observables are calculated which can be compared with experimental data
 </div>
 
 *Predictions of the model with Grad particlization at the point in parameter space of maximum likelihood.*
+
+
+### Statistical Model Emulation<a name="stat_emu"></a>
+
+The computational physics model we use to generate observables given the physical parameters includes two or three-dimensional hydrodynamic solvers as well as Monte Carlo Boltzmann Solvers. Given a single set of parameters, evaluation of the model can exceed fifty-thousand core-hours. This makes exploring the likelihood function (comparing the model-data misfit) intractable with the computational model.
+
+Instead, we train a statistical surrogate or *emulator* as a proxy for our model when we perform likelihood evaluation in Bayesian inference. The emulation introduces an additional source of uncertainty.
+In practice, we perform a dimensionality reduction of the observables via [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis). Then, each principal component is modeled by a Gaussian process.
+
+I've written a introduction to Bayesian inference with a Gaussian process model emulator and Markov Chain Monte Carlo [here](https://github.com/derekeverett/simple_bayes_with_GP/blob/master/Infer_Shear_Viscosity_from_Flow_GPy.ipynb).  
+
  
 
 ### Statistical Inference<a name="stat_infer"></a>
@@ -57,3 +69,13 @@ Making robust estimates of the transport properties requires us to include the m
 </div>
 
 *The posterior of select model parameters, for two different models in blue and red.*
+
+Besides the uncertainties which exist in the physical parameters describing the system, there can be additional sources of model uncertainty in the dynamical models that we employ. Such discrete sources of model uncertainty pose the problem of model selection. We investigate this question by calculating the [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) -- the odds that the experimental data were produced by a certain model relative to another model. The Bayes factor can depend sensitively on the priors chosen for each model -- if certain priors were relaxed or constrained, our selection of which model the data prefer can change! To address this sensitivity, the [Bayes factor surface] was proposed.
+Bayes factor surfaces for three different models are shown below.
+
+<div style="text-align:center">
+<img src="figs/log_odds_grad_ce.png" alt="Bayes factor surface" width="400"/>
+</div>
+
+*The predicted log-odds (color contours) between two different models, as a function of two prior hyperparameters.*  
+
