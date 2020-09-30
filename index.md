@@ -11,9 +11,11 @@
 The collisions of heavy nuclei at very high energies performed at the [Relativistic Heavy Ion Collider](https://www.bnl.gov/rhic/) and [Large Hadron Collider](https://home.cern/science/experiments/alice)) can produce an exotic state of matter called [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma). 
 This phase of matter existed in the infant universe about one microsecond after the [Big Bang](https://en.wikipedia.org/wiki/Big_Bang). 
 
-To understand the properties of this phase of matter, we develop physical models and compare their predictions to the data measured in the labaratory. Disentangling the properties of the collision at early times given only the finally measured particles requires us a methodology for inference. We use [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference) as a systematic way to make conclusions given the observed data. 
+To understand the properties of this phase of matter, we develop physical models and compare their predictions to the data measured in the labaratory. Disentangling the properties of the collision at early times given only the finally measured particles requires a systematic methodology for inference. We use [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference) as a systematic way to make conclusions given the observed data.
 
-I have been a contributing member of the [JETSCAPE collaboration](jetscape.org), designed to tackle both physical and statistical modeling. A review of some of the work by our particular team can be found [here](http://jetscape.org/sims/). 
+Bayes theorem  
+
+I have been a contributing member of the [JETSCAPE collaboration](jetscape.org), designed to tackle both physical and statistical modeling. A review of some of the work by our team can be found [here](http://jetscape.org/sims/). 
 
 
 ### Computational Modeling of Physical Systems<a name="comp_model"></a> 
@@ -46,7 +48,6 @@ In practice, we perform a dimensionality reduction of the observables via [princ
 
 I've written a introduction to Bayesian inference with a Gaussian process model emulator and Markov Chain Monte Carlo [here](https://github.com/derekeverett/simple_bayes_with_GP/blob/master/Infer_Shear_Viscosity_from_Flow_GPy.ipynb).  
 
- 
 
 ### Statistical Inference<a name="stat_infer"></a>
 
