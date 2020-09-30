@@ -13,8 +13,9 @@ This phase of matter existed in the infant universe about one microsecond after 
 
 To understand the properties of this phase of matter, we develop physical models and compare their predictions to the data measured in the labaratory. Disentangling the properties of the collision at early times given only the finally measured particles requires a systematic methodology for inference. We use [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference) as a systematic way to make conclusions given the observed data.
 
-If $\mathcal{P}(A|B)$ denotes the probability (density) of a proposition $A$ being realized, given that $B$ is true, then Bayes theorem simply states 
-$\mathcal{P}(A|B) = \mathcal{P}(B|A) \mathcal{P}(A) / \mathcal{P}(B).$
+If $P(A|B)$ denotes the probability (density) of a proposition $A$ being realized, given that $B$ is true, then Bayes theorem simply states 
+
+$$P(A|B) = P(B|A) P(A) / P(B).$$
 
 I have been a contributing member of the [JETSCAPE collaboration](jetscape.org), designed to tackle both physical and statistical modeling. A review of some of the work by our team can be found [here](http://jetscape.org/sims/). 
 
