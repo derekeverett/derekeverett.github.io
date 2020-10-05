@@ -46,7 +46,7 @@ In practice, we perform a dimensionality reduction of the observables via [princ
 
 I've written a introduction to Bayesian inference with a Gaussian process model emulator and Markov Chain Monte Carlo [here](https://github.com/derekeverett/simple_bayes_with_GP/blob/master/Infer_Shear_Viscosity_from_Flow_GPy.ipynb). It introduces some of the main ingredients to our statistcal approach in a setting with a much simpler physics model. 
 
-I've also developed a [widget](www.jetscape.org/sims-widget) that allows us to explore how our model predictions depend on various combinations of the parameters. This is useful for interpreting the posteriors we find after performing Bayesian inference, but also for deeper understanding of the behavior of our model. 
+I've also developed a [widget](http://jetscape.org/sims-widget) that allows us to explore how our model predictions depend on various combinations of the parameters. This is useful for interpreting the posteriors we find after performing Bayesian inference, but also for deeper understanding of the behavior of our model. 
 
 
 ### Statistical Inference<a name="stat_infer"></a>
