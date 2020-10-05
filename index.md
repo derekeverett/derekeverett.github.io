@@ -85,7 +85,7 @@ Finally, some of these models share common parameters, which include the specifi
 <img src="figs/bayes_model_avg_viscous_posterior.png" alt="Bayesian Model Averaged Viscosities" width="500"/>
 </div>
 
-*The top row contains the Bayesian model averaged specific bulk(left) and shear(right) viscosities as a function of temperature. The bottom row contains the Kullbak-Leibler divergence('information gain') of our posterior with respect to our prior. At high temperatures, the data teach us very little.*  
+*The top row contains the Bayesian model averaged specific bulk(left) and shear(right) viscosities as a function of temperature. The bottom row contains the [Kullbak-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) (a.k.a. 'information gain') of our posterior with respect to our prior. At high temperatures, the data teach us very little.*  
 
  
 
