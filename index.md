@@ -16,9 +16,6 @@ This phase of matter existed in the infant universe about one microsecond after 
 
 To understand the properties of this Quark-Gluon Plasma, we develop physics models and compare their predictions to data measured in the labaratory. Disentangling the properties of the collision at early times given the finally measured particles requires a systematic methodology for inference, and we use [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference). 
 
-<If $P(A|B)$ denotes the probability (density) of a proposition $A$ being realized, given that $B$ is true, then Bayes theorem simply states 
-$$P(A|B) = P(B|A) P(A) / P(B).$$>
-
 
 ### Computational Modeling of Physical Systems<a name="comp_model"></a> 
 
